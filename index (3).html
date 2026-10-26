@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VENUS SPRING WORKS – Four-Wheeler Leaf Spring Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f8f5;--bg2:#edf5ef;--bg3:#e8f2eb;--line:#dbe6de;--line2:#c2d1c6;
+  --green:#166534;--dark:#0d3820;--deep:#0a2918;--ink:#121d16;--body:#3f4c43;--muted:#3f5647;
+  --amber:#feba52;--mint:#34d399;--emerald:#059669;--red:#ba1a1a;
+  --head:'Manrope',system-ui,sans-serif;--text:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--text);color:var(--body);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);color:var(--ink)}
+.eyebrow-s{font:700 11px var(--head);letter-spacing:1.1px;text-transform:uppercase;color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 clamp(16px,2vw,20px)/1.4 var(--head);padding:10px 24px;border-radius:4px;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 10px 15px -3px rgba(0,0,0,.15)}
+.btn-g{background:var(--green);color:#fff}
+.btn-g:hover{background:var(--dark)}
+.btn-w{background:#fff;color:var(--ink);border-color:var(--line2)}
+.btn-sm{font-size:14px;padding:10px 18px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;height:80px}
+.brand{display:flex;align-items:center;gap:8px;padding:4px;border-radius:4px}
+.logo{width:44px;height:44px;border:1px solid var(--amber);border-radius:12px;box-shadow:0 1px 2px rgba(0,0,0,.05);overflow:hidden;flex:none;background:var(--dark)}
+.logo img{width:100%;height:100%;object-fit:cover}
+.bn{display:flex;align-items:center;gap:6px;font-family:var(--head);text-transform:uppercase;line-height:1}
+.bn b{font-weight:800;font-size:28px;letter-spacing:-1.4px;color:var(--dark)}
+.bn span{font-weight:700;font-size:10px;letter-spacing:1px;color:var(--muted);line-height:1.1}
+.tag{display:block;white-space:nowrap;font:700 10px var(--head);letter-spacing:1px;text-transform:uppercase;color:var(--body)}
+.bn{white-space:nowrap}
+nav.main a,.hcall,.live{white-space:nowrap}
+body{overflow-x:clip}
+nav.main{display:flex;gap:16px}
+nav.main a{font:400 15px var(--text);padding:4px 8px;border-radius:4px;color:var(--body)}
+nav.main a.on{background:var(--bg3);color:var(--dark);font-weight:600}
+nav.main a:hover{background:var(--bg3)}
+.hr{display:flex;align-items:center;gap:16px}
+.live{display:flex;align-items:center;gap:8px;background:#ecfdf5;border:1px solid rgba(167,243,208,.8);border-radius:12px;padding:5px 11px;font:700 10px var(--head);letter-spacing:.5px;text-transform:uppercase;color:#065f46}
+.dot{position:relative;width:8px;height:8px;flex:none}
+.dot i,.dot b{position:absolute;inset:0;border-radius:50%}
+.dot i{background:var(--mint);opacity:.75;animation:ping 1.6s cubic-bezier(0,0,.2,1) infinite}
+.dot b{background:var(--emerald)}
+@keyframes ping{75%,100%{transform:scale(2.4);opacity:0}}
+.hcall{display:flex;align-items:center;gap:6px;background:var(--green);color:#fff;font:700 11px var(--head);letter-spacing:.88px;padding:8px 16px;border-radius:4px}
+.hcall .short{display:none}
+.hico{width:32px;height:32px;border-radius:12px;background:var(--dark);color:#fff;display:grid;place-items:center;font-size:12px}
+
+/* hero */
+.hero{background:#fff;border-bottom:1px solid var(--line);padding:48px 0 49px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:stretch}
+.hl{grid-column:1/span 7;display:flex;flex-direction:column;justify-content:center;padding:40px 0}
+.eye{display:flex;align-items:center;gap:8px;padding-bottom:8px}
+.emb{width:80px;height:80px;border:2px solid rgba(254,186,82,.6);border-radius:12px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);overflow:hidden;flex:none;background:var(--dark)}
+.emb img{width:100%;height:100%;object-fit:cover}
+.eye .r1{display:flex;align-items:center;gap:4px}
+.eye .r1 i{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.eye .r1 span{font:700 11px/14px var(--head);letter-spacing:1.1px;text-transform:uppercase;color:var(--muted)}
+.eye .r2{font:600 12px/22px var(--head);color:var(--dark)}
+.hero h1{font:800 clamp(34px,5vw,56px)/1.14 var(--head);letter-spacing:-1.68px;margin:8px 0 16px}
+.hero .p1{font-size:18px;line-height:1.63;max-width:576px;margin-bottom:12px}
+.hero .p2{font-size:15px;line-height:1.63;max-width:576px;margin-bottom:24px}
+.acts{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:24px}
+.trust{display:flex;align-items:center;gap:6px;border-top:1px solid var(--line);padding-top:17px;font:600 13px/16px var(--head);letter-spacing:.26px;color:var(--muted)}
+.trust .fi{flex:none}
+/* tension panel */
+.panel{grid-column:8/span 5;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:41px 32px;box-shadow:0 1px 2px rgba(0,0,0,.05);position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px}
+.panel:before{content:"";position:absolute;right:-64px;top:-64px;width:224px;height:224px;border-radius:12px;background:rgba(214,235,224,.4);filter:blur(40px);pointer-events:none}
+.panel>*{position:relative}
+.pb{display:flex;justify-content:space-between;align-items:center}
+.pb .t{background:var(--line);border-radius:2px;padding:4px;font:600 11px/14px var(--head);letter-spacing:.88px;color:var(--body)}
+.pb .s{display:flex;align-items:center;gap:6px;font:600 13px/16px var(--head);letter-spacing:.26px;color:var(--dark)}
+.pb .s i{width:6px;height:6px;border-radius:50%;background:var(--green)}
+.panel h2{font:700 clamp(28px,3vw,36px)/1.22 var(--head);letter-spacing:-.72px}
+.panel .sub{font-size:15px;line-height:22px}
+.gauge{background:#fff;border:1px solid var(--line);border-radius:8px;padding:27px 15px 15px;display:flex;flex-direction:column;gap:8px}
+.gh{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.gl{display:flex;align-items:center;gap:6px}
+.gl span{font:700 10px/22px var(--head);letter-spacing:.5px;text-transform:uppercase;color:var(--muted);padding-right:8px}
+.gs{display:flex;align-items:center;gap:6px;background:var(--bg3);border-radius:2px;padding:2px 8px}
+.gs>span{font:400 11px/22px var(--head);color:var(--body)}
+.cyc{background:var(--green);color:#fff;border:0;border-radius:2px;padding:2px 16px;font:700 10px/22px var(--head);letter-spacing:.5px;text-transform:uppercase;text-align:center;cursor:pointer;margin-left:2px;transition:background .2s,transform .2s}
+.cyc:hover{background:var(--dark);transform:scale(1.04)}
+.cyc.on{background:var(--amber);color:var(--deep)}
+.viz{position:relative;height:112px;border:1px solid rgba(2,44,34,.8);border-radius:4px;overflow:hidden;padding:1px 9px;display:flex;align-items:center;cursor:pointer;background:linear-gradient(180deg,#0c2417,#081d12 50%,#05140b)}
+.viz .grid{position:absolute;inset:0;opacity:.15;background-image:linear-gradient(90deg,rgb(134,239,172) 6.25%,rgba(134,239,172,0) 6.25%),linear-gradient(180deg,rgb(134,239,172) 6.25%,rgba(134,239,172,0) 6.25%);background-size:16px 16px}
+.viz .hax{position:absolute;left:0;right:0;top:calc(50% + .5px);height:1px;background:rgba(16,185,129,.1)}
+.viz .vax{position:absolute;top:0;bottom:0;left:calc(50% + .5px);width:1px;background:rgba(16,185,129,.2)}
+.viz .clk{position:absolute;right:10px;bottom:4px;display:flex;align-items:center;gap:4px;z-index:3}
+.viz .clk i{width:6px;height:6px;border-radius:50%;background:var(--mint)}
+.viz .clk em{font:400 9px/22px var(--head);font-style:normal;color:rgba(52,211,153,.8)}
+.viz .svg{position:relative;width:100%;height:96px}
+.ly{position:absolute;transition:transform .8s cubic-bezier(.4,0,.2,1)}
+.ly .in{position:absolute}
+.ly img{display:block;max-width:none;width:100%;height:100%}
+.ly img.z{position:absolute;inset:0}
+.viz.load .l1{transform:translateY(13px)}
+.viz.load .l2{transform:translateY(10px)}
+.viz.load .l3{transform:translateY(7px)}
+.viz.load .l4{transform:translateY(4px)}
+.viz.load .clamp{transform:translateY(11px)}
+.tele{display:flex;gap:6px;justify-content:center;border-top:1px solid rgba(219,230,222,.5);padding-top:11px}
+.tele div{flex:1 0 0;min-width:1px;background:var(--bg2);border-radius:2px;padding:4px;text-align:center}
+.tele small{display:block;font:600 9px/22px var(--head);text-transform:uppercase;color:var(--body)}
+.tele strong{display:block;font:700 11px/22px var(--head)}
+.fi{display:block;flex:none;max-width:none}
+.items{display:flex;flex-direction:column;gap:8px}
+.it{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:4px;padding:12px 15px;transition:transform .25s,border-color .25s}
+.it:hover{transform:translateX(6px);border-color:var(--green)}
+.it .n{font:700 12px var(--head);color:var(--green);padding-top:2px}
+.it h3{font:700 15px/1.4 var(--head)}
+.it p{font-size:12px;line-height:1.5}
+.plink{display:inline-flex;align-items:center;gap:6px;font:700 13px var(--head);color:var(--green);margin-top:auto;border-top:1px solid var(--line);padding-top:14px}
+.plink .fi{transition:transform .25s}
+.plink:hover .fi{transform:translateX(5px)}
+
+/* marquee */
+.mq{background:var(--deep);border-block:1px solid rgba(2,44,34,.8);overflow:hidden;padding:11px 0;white-space:nowrap}
+.mq div{display:inline-flex;animation:mq 38s linear infinite}
+.mq:hover div{animation-play-state:paused}
+.mq span{font:700 13px/22px var(--head);letter-spacing:1.3px;text-transform:uppercase;color:#fff;padding:0 12px}
+.mq span.a{color:#d1fae5}
+.mq span.s{color:#fbbf24;padding:0 12px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:80px 0}
+.apr{background:var(--bg2);border-bottom:1px solid var(--line)}
+.fbs{background:#fff;border-bottom:1px solid var(--line)}
+.loc{background:var(--bg2);border-bottom:1px solid var(--line)}
+.sh{max-width:768px;margin-bottom:40px}
+.sh .k{font:700 12px var(--head);letter-spacing:1.3px;color:var(--green);text-transform:uppercase;margin-bottom:8px}
+.sh h2,.h2{font:700 clamp(26px,3.4vw,36px)/1.22 var(--head);letter-spacing:-.72px;margin-bottom:16px}
+.sh p{font-size:18px;line-height:1.63;margin-bottom:10px}
+.sh p.b{font-weight:600;color:var(--dark)}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-bottom:40px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:25px;box-shadow:0 1px 2px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:12px;transition:transform .3s,box-shadow .3s;opacity:0;transform:translateY(18px);animation:up .6s ease forwards}
+.card:nth-child(2){animation-delay:.12s}.card:nth-child(3){animation-delay:.24s}.card:nth-child(4){animation-delay:.36s}
+@keyframes up{to{opacity:1;transform:none}}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+.card .n{font:700 12px var(--head);color:var(--green);border:1px solid var(--line);background:var(--bg2);border-radius:2px;padding:1px 6px;align-self:flex-start}
+.card h3{font:700 18px/1.4 var(--head)}
+.card p{font-size:13px;line-height:1.6;flex:1}
+.card .f{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:14px;font:700 10px var(--head);letter-spacing:1px;color:var(--muted)}
+.commit{position:relative;overflow:hidden;background:linear-gradient(135deg,#0d3820,#0a2918 60%,#071c10);border:1px solid rgba(6,78,59,.6);border-radius:8px;padding:41px;display:flex;gap:40px;align-items:center;justify-content:space-between;box-shadow:0 20px 25px -5px rgba(0,0,0,.1)}
+.commit:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(110,231,183,.08) 50%,transparent 65%);transform:translateX(-100%);animation:shim 5s ease-in-out infinite;pointer-events:none}
+@keyframes shim{60%,100%{transform:translateX(100%)}}
+.commit>*{position:relative;z-index:1}
+.commit .k{display:flex;align-items:center;gap:6px;font:700 11px var(--head);letter-spacing:1.1px;color:#6ee7b7;margin-bottom:8px}
+.commit h3{font:800 clamp(26px,3vw,36px)/1.2 var(--head);letter-spacing:-.72px;color:#fff;margin-bottom:12px}
+.commit p{color:rgba(209,250,229,.9);font-size:16px;max-width:660px}
+.commit p.s{color:rgba(110,231,183,.8);margin-top:8px;font-size:14px}
+.btn-wh{background:#fff;color:var(--dark);font-size:16px;white-space:nowrap}
+
+/* feedback */
+.two{display:grid;grid-template-columns:5fr 7fr;gap:24px;align-items:start}
+.ctx{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:33px;display:flex;flex-direction:column;gap:16px}
+.ctx h3{font:700 20px/1.4 var(--head)}
+.ctx p{font-size:14px;line-height:1.6}
+.ctx .ctx-b{align-self:flex-start;font-size:15px;padding:8px 20px;background:var(--dark);color:#fff}
+.note{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.5;background:#fff;border:1px solid var(--line);border-radius:4px;padding:10px 12px}
+.note .fi{margin-top:2px}
+.fc{background:#fff;border:1px solid var(--line);border-radius:8px;padding:41px;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)}
+.fc h3{font:700 20px/1.4 var(--head)}
+.fc .d{font-size:13px;margin-bottom:20px}
+.fld{display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+.fld label{font:700 10px/14px var(--head);letter-spacing:.5px;color:var(--muted)}
+.fld label i{color:var(--red);font-style:normal}
+.fld input,.fld select,.fld textarea{width:100%;font:400 14px var(--text);color:var(--ink);background:#fff;border:1px solid var(--line2);border-radius:4px;padding:10px 12px;outline:none;transition:border-color .2s,box-shadow .2s}
+.fld input,.fld select{height:44px}
+.fld textarea{min-height:110px;resize:vertical}
+.fld select{appearance:none;background:#fff url("https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/fcab8.svg") no-repeat right 14px center/10px 6.167px}
+.fld input::placeholder,.fld textarea::placeholder{color:#6b7280}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(22,101,52,.15)}
+.sub-btn{width:100%;background:var(--green);color:#fff;border:0;border-radius:4px;height:48px;font:700 15px var(--head);display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:background .2s,transform .2s}
+.sub-btn:hover{background:var(--dark);transform:translateY(-1px)}
+.sub-btn:disabled{opacity:.7;cursor:wait;transform:none}
+.sub-btn.ok{background:var(--emerald)}
+.sub-btn.err{background:var(--red)}
+.fnote{text-align:center;font-size:12px;margin-top:12px}
+#msg{display:none;margin-top:12px;padding:10px 12px;border-radius:4px;font:600 13px var(--head)}
+#msg.ok{display:block;background:#ecfdf5;color:#065f46;border:1px solid rgba(167,243,208,.8)}
+#msg.err{display:block;background:#fef2f2;color:var(--red);border:1px solid #fecaca}
+
+/* location */
+.lh{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.lh .sh{margin:0}
+.btn-map{background:var(--green);color:#fff;font-size:14px;padding:10px 18px}
+.lc{background:#fff;border:1px solid var(--line);border-radius:8px;padding:25px;box-shadow:0 4px 6px -1px rgba(0,0,0,.1);display:flex;flex-direction:column;gap:16px}
+.badge{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;background:var(--bg3);border:1px solid var(--line);border-radius:4px;padding:3px 8px;font:700 11px var(--head);color:var(--dark)}
+.lc h3{font:800 24px/1.3 var(--head);letter-spacing:-.24px}
+.addr{background:var(--bg2);border:1px solid var(--line);border-radius:4px;padding:12px 16px;font:700 18px/1.4 var(--head);color:var(--dark)}
+.lc .ez{font-size:12px;margin-top:-8px}
+.oh{border:1px solid var(--line);border-radius:4px;padding:16px}
+.oh .t{display:flex;justify-content:space-between;align-items:center;font:700 12px var(--head);color:var(--ink);margin-bottom:8px}
+.oh .t small{font:600 10px var(--head);background:var(--bg3);padding:2px 6px;border-radius:2px;color:var(--muted)}
+.row{display:grid;grid-template-columns:100px 1fr;font-size:12px;line-height:18px;padding:2px 0}
+.row span:last-child{text-align:right}
+.closed{color:var(--red);font-weight:600}
+.ent,.dp{display:flex;gap:10px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:4px;padding:10px 12px;font-size:12px}
+.ent b,.dp b{display:block;font:700 12px var(--head);color:var(--ink)}
+.dp{flex-wrap:wrap}
+.dp .k{font:700 10px var(--head);letter-spacing:.5px;color:var(--muted)}
+.dp a{font:700 12px var(--head);color:var(--green);text-decoration:underline}
+.lb{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+.lb .btn{font-size:14px;padding:12px 18px;border-radius:4px}
+
+/* cta */
+.cta{background:var(--deep);text-align:center;color:#d1fae5}
+.cta .k{font:700 11px var(--head);letter-spacing:1.3px;color:rgba(52,211,153,.8);margin-bottom:12px}
+.cta h2{font:800 clamp(26px,3.6vw,40px)/1.2 var(--head);letter-spacing:-.8px;color:#fff;margin-bottom:16px}
+.cta p{max-width:672px;margin:0 auto 28px;font-size:16px;color:rgba(209,250,229,.9)}
+.cta .acts{justify-content:center;padding-bottom:20px}
+.cta .btn-g{background:var(--green)}
+.cta .btn-o{background:transparent;color:#fff;border-color:rgba(167,243,208,.35)}
+.cta .btn-o:hover{background:rgba(255,255,255,.06)}
+.cta .fine{font:600 12px var(--head);letter-spacing:.5px;color:rgba(110,231,183,.8)}
+
+/* footer */
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:41px 0 40px}
+.fg{display:grid;grid-template-columns:5fr 3fr 4fr;gap:40px;padding-bottom:24px}
+.fg .d{font-size:13px;max-width:384px;margin-top:12px;line-height:1.6}
+.fg h4{font:700 11px var(--head);letter-spacing:1.1px;color:var(--muted);margin-bottom:12px}
+.fg ul{list-style:none;display:flex;flex-direction:column;gap:4px;font-size:13px}
+.fg ul a:hover,.fg a.u:hover{color:var(--green)}
+.fg .r{display:flex;justify-content:space-between;font-size:12px;line-height:20px;max-width:320px}
+.fg .em{display:flex;align-items:center;gap:6px;font:700 12px var(--head);color:var(--green);margin:8px 0}
+.fg .em i{width:6px;height:6px;border-radius:50%;background:var(--green)}
+.fg .ph{font-size:12px;margin:6px 0}
+.fg .ph a{font-weight:700;color:var(--green);text-decoration:underline}
+.fg .mp{display:inline-flex;align-items:center;gap:6px;font:700 12px var(--head);color:var(--green);margin-top:8px}
+.fb{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px;font-size:12px}
+.fb span:last-child{font:600 11px var(--head);letter-spacing:.5px;text-transform:uppercase;color:var(--muted)}
+
+/* responsive */
+@media(max-width:1480px){.live{display:none}}
+@media(max-width:1260px){.hico{display:none}nav.main{gap:4px}}
+@media(max-width:1100px){
+  nav.main,.live{display:none}
+  .hero .wrap{display:block}
+  .hl{padding:16px 0 32px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .two{grid-template-columns:1fr}
+  .commit{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:700px){
+  section{padding:56px 0}
+  .wrap{padding:0 16px}
+  .hd{height:auto;padding-block:10px}
+  .tag,.hcall .short{display:none}
+.hico{display:none}
+  .bn b{font-size:22px}
+  .hcall{font-size:11px;padding:8px 12px}
+  .hcall .full{display:none}
+  .hcall .short{display:inline}
+  .hero{padding:24px 0 32px}
+  .panel{padding:24px 18px}
+  .cards,.fg,.lb{grid-template-columns:1fr}
+  .commit,.fc,.ctx{padding:24px 18px}
+  .acts .btn{width:100%}
+  .row{grid-template-columns:80px 1fr}
+  .addr{font-size:15px}
+}
+@media(max-width:520px){
+  .gh{flex-wrap:wrap}
+  .tele{display:grid;grid-template-columns:1fr 1fr}
+  .btn{width:100%}
+  .sh p,.hero .p1{font-size:16px}
+  .hero h1{letter-spacing:-1px}
+  .lh{align-items:flex-start}
+  .fb{flex-direction:column}
+}
+@media(max-width:340px){.bn b{font-size:19px}.tag{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.card{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#home" aria-label="VENUS SPRING WORKS home">
+      <span class="logo"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/19735.png" alt="VENUS SPRING WORKS logo"></span>
+      <span>
+        <span class="bn"><b>Venus</b><span>Spring<br>Works</span></span>
+        <span class="tag">Heavy Suspension &amp; Leaf Springs</span>
+      </span>
+    </a>
+    <nav class="main" aria-label="Primary">
+      <a class="on" href="#home">Home</a>
+      <a href="#standards">Our Standards</a>
+      <a href="#feedback">Customer Feedback</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hr">
+      <span class="live"><span class="dot"><i></i><b></b></span>Bays Active &amp; Open</span>
+      <a class="hcall" href="tel:+919524293401"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/7a19c.svg" width="12" height="12" alt=""><span class="full">+91 95242 93401 / 99427 24225</span><span class="short">Call Now</span></a>
+      <a class="hico" href="#feedback" aria-label="Customer feedback"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/59e02.svg" width="12" height="12" alt=""></a>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hl">
+      <div class="eye">
+        <span class="emb"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/19735.png" alt="VENUS SPRING WORKS emblem"></span>
+        <div>
+          <div class="r1"><i></i><span>VENUS SPRING WORKS</span></div>
+          <div class="r2">FOUR-WHEELER LEAF SPRING SERVICES</div>
+        </div>
+      </div>
+      <h1>Your Four-Wheeler Deserves Nothing Less Than the Best.</h1>
+      <p class="p1">When it comes to your vehicle, quality matters. At VENUS SPRING WORKS, we believe every vehicle deserves careful attention, reliable workmanship, and service you can feel confident about.</p>
+      <p class="p2">From leaf spring-related service needs to careful attention to your vehicle's suspension components, our focus is on quality, precision, and customer satisfaction.</p>
+      <div class="acts">
+        <a class="btn btn-g" href="#feedback">Enquire About Your Vehicle</a>
+        <a class="btn btn-w" href="tel:+919524293401"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/2d97c.svg" width="15" height="15" alt="">Call: 9524293401 / 9942724225</a>
+      </div>
+      <div class="trust"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/c131d.svg" width="18.333" height="17.5" alt="">Quality Workmanship. Reliable Service. Complete Peace of Mind.</div>
+    </div>
+
+    <aside class="panel" id="standards" aria-label="Quality standards">
+      <div class="pb"><span class="t">STANDARDS // PROTOCOL</span><span class="s"><i></i>SYS.04</span></div>
+      <div>
+        <h2>Quality Comes First.</h2>
+        <p class="sub">Your vehicle deserves careful attention and a workshop that takes its work seriously.</p>
+      </div>
+      <div class="gauge" id="gauge" data-name="AUTHENTIC MULTI-LEAF SPRING CAMBER COMPRESSION MICRO-FEATURE">
+        <div class="gh">
+          <div class="gl"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/883a6.svg" width="11.27" height="11.566" alt=""><span>CAMBER CURVATURE<br>DYNAMICS</span></div>
+          <div class="gs">
+            <span id="state">Unloaded Camber<br>(Neutral)</span>
+            <button class="cyc" id="cycle" type="button" aria-pressed="false" aria-label="Toggle leaf spring load simulation">CYCLE<br>LOAD</button>
+          </div>
+        </div>
+        <div class="viz" id="viz" role="img" aria-label="Multi-leaf heavy duty suspension assembly display">
+          <span class="grid"></span><span class="hax"></span><span class="vax"></span>
+          <span class="clk"><i></i><em>Click to simulate load deflection</em></span>
+          <div class="svg">
+              <span class="ly l5" data-l="leaf-5" style="top:59.26%;right:36.76%;bottom:36.1%;left:36.76%"><span class="in" style="top:-38.89%;right:-0.38%;bottom:-38.13%;left:-0.38%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/a3543.svg" alt=""></span></span>
+              <span class="ly l4" data-l="leaf-4" style="top:54.63%;right:29.41%;bottom:39.71%;left:29.41%"><span class="in" style="top:-36.36%;right:-0.22%;bottom:-35.92%;left:-0.22%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/fc33d.svg" alt=""></span></span>
+              <span class="ly l3" data-l="leaf-3" style="top:49.49%;right:21.18%;bottom:43.82%;left:21.18%"><span class="in" style="top:-32.31%;right:-0.14%;bottom:-32.03%;left:-0.14%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/32bc8.svg" alt=""></span></span>
+              <span class="ly l2" data-l="leaf-2" style="top:43.82%;right:12.94%;bottom:48.46%;left:12.94%"><span class="in" style="top:-30%;right:-0.89%;bottom:-30%;left:-0.89%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/d52c7.svg" alt=""></span></span>
+              <span class="ly l1" data-l="leaf-1" style="top:37.65%;right:6.47%;bottom:53.09%;left:6.47%"><span class="in" style="top:-27.78%;right:-0.84%;bottom:-27.78%;left:-0.84%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/51987.svg" alt=""></span></span>
+              <span class="ly l1" data-l="leaf-1-hi" style="top:36.82%;right:7.06%;bottom:53.91%;left:7.06%"><span class="in" style="top:-5.56%;right:-0.17%;bottom:-5.56%;left:-0.17%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/af7a6.svg" alt=""></span></span>
+              <span class="ly eye" data-l="eye-L1" style="top:39.19%;right:91.32%;bottom:45.37%;left:4.26%"><span class="in" style="top:-6.67%;right:-6.67%;bottom:-6.67%;left:-6.67%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/c7867.svg" alt=""></span></span>
+              <span class="ly eye" data-l="eye-L2" style="top:41.97%;right:92.12%;bottom:48.15%;left:5.06%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/6a160.svg" alt=""></span>
+              <span class="ly eye" data-l="eye-L3" style="top:44.44%;right:92.82%;bottom:50.62%;left:5.76%"><span class="in" style="top:-5.21%;right:-5.21%;bottom:-5.21%;left:-5.21%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/3bd0a.svg" alt=""></span></span>
+              <span class="ly eye" data-l="eye-R1" style="top:39.19%;right:4.26%;bottom:45.37%;left:91.32%"><span class="in" style="top:-6.67%;right:-6.67%;bottom:-6.67%;left:-6.67%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/45363.svg" alt=""></span></span>
+              <span class="ly eye" data-l="eye-R2" style="top:41.97%;right:5.06%;bottom:48.15%;left:92.12%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/65e96.svg" alt=""></span>
+              <span class="ly eye" data-l="eye-R3" style="top:44.44%;right:5.76%;bottom:50.62%;left:92.82%"><span class="in" style="top:-5.21%;right:-5.21%;bottom:-5.21%;left:-5.21%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/3bd0a.svg" alt=""></span></span>
+              <span class="ly clip" data-l="clip-L1" style="top:41.76%;right:73.82%;bottom:38.68%;left:24.41%"><span class="in" style="top:-2.63%;right:-8.33%;bottom:-2.63%;left:-8.33%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/a13b1.svg" alt=""></span></span>
+              <span class="ly clip" data-l="clip-L2" style="top:43.62%;right:74.35%;bottom:53.91%;left:24.94%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/99f9d.svg" alt=""></span>
+              <span class="ly clip" data-l="clip-L3" style="top:55.97%;right:74.35%;bottom:41.56%;left:24.94%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/5b257.svg" alt=""></span>
+              <span class="ly clip" data-l="clip-R1" style="top:41.76%;right:24.41%;bottom:38.68%;left:73.82%"><span class="in" style="top:-2.63%;right:-8.33%;bottom:-2.63%;left:-8.33%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/a13b1.svg" alt=""></span></span>
+              <span class="ly clip" data-l="clip-R2" style="top:43.62%;right:24.94%;bottom:53.91%;left:74.35%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/99f9d.svg" alt=""></span>
+              <span class="ly clip" data-l="clip-R3" style="top:55.97%;right:24.94%;bottom:41.56%;left:74.35%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/5b257.svg" alt=""></span>
+              <span class="ly clamp" data-l="clamp1" style="top:24.78%;right:45%;bottom:68.53%;left:45%"><span class="in" style="top:-7.69%;right:-1.47%;bottom:-7.69%;left:-1.47%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/ae585.svg" alt=""></span></span>
+              <span class="ly clamp" data-l="clamp2" style="top:21.69%;right:49.12%;bottom:73.68%;left:49.12%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/ce3fa.svg" alt=""></span>
+              <span class="ly clamp" data-l="clamp3" style="top:22.21%;right:53.24%;bottom:38.68%;left:46.76%"><span class="in" style="top:-3.29%;right:-1.24px;bottom:-3.29%;left:-1.24px"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/fa715.svg" alt=""></span></span>
+              <span class="ly clamp" data-l="clamp4" style="top:22.21%;right:46.76%;bottom:38.68%;left:53.24%"><span class="in" style="top:-3.29%;right:-1.24px;bottom:-3.29%;left:-1.24px"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/fa715.svg" alt=""></span></span>
+              <span class="ly clamp" data-l="clamp5" style="top:62.35%;right:44.41%;bottom:28.38%;left:44.41%"><span class="in" style="top:-5.56%;right:-1.32%;bottom:-5.56%;left:-1.32%"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/b5cee.svg" alt=""></span></span>
+              <span class="ly clamp" data-l="clamp6" style="top:64.21%;right:52.59%;bottom:31.26%;left:46.12%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/581b6.svg" alt=""></span>
+              <span class="ly clamp" data-l="clamp7" style="top:64.21%;right:46.12%;bottom:31.26%;left:52.59%"><img class="z" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/f7b61.svg" alt=""></span>
+          </div>
+        </div>
+        <div class="tele">
+          <div><small>ARCH CAMBER</small><strong id="m1" style="color:#0d3820">+142 mm</strong></div>
+          <div><small>DEFLECTION</small><strong id="m2" style="color:#121d16">0.0 mm</strong></div>
+          <div><small>CAMBER STRESS</small><strong id="m3" style="color:#047857">Nominal</strong></div>
+          <div><small>STEEL SPEC</small><strong style="color:#3f5647">55Si7 / SUP9</strong></div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="it"><span class="n">01</span><div><h3>Attention to Detail</h3><p>Rigorous structural assessment applied across every single leaf and contact interface.</p></div></div>
+        <div class="it"><span class="n">02</span><div><h3>Quality-Focused Workmanship</h3><p>Precise spring camber realignment and torque compliance for maximum load safety.</p></div></div>
+        <div class="it"><span class="n">03</span><div><h3>Customer-First Service</h3><p>Transparent technical evaluations without aggressive upselling or speculative claims.</p></div></div>
+      </div>
+      <a class="plink" href="#approach">Learn About Our Standards <img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/6111f.svg" width="10.667" height="10.667" alt=""></a>
+    </aside>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="mq" aria-hidden="true">
+  <div>
+    <span>VENUS SPRING WORKS</span><span class="s">★</span><span class="a">HEAVY LEAF SPRING RE-CAMBERING</span><span class="s">★</span><span class="a">4-WHEELER &amp; COMMERCIAL FLEET SUSPENSION</span><span class="s">★</span><span>CALL: 9524293401 / 9942724225</span><span class="s">★</span><span class="a">MELAKOTTAI, EAST COAST RD JUNCTION, RAMANATHAPURAM</span><span class="s">★</span>
+    <span>VENUS SPRING WORKS</span><span class="s">★</span><span class="a">HEAVY LEAF SPRING RE-CAMBERING</span><span class="s">★</span><span class="a">4-WHEELER &amp; COMMERCIAL FLEET SUSPENSION</span><span class="s">★</span><span>CALL: 9524293401 / 9942724225</span><span class="s">★</span><span class="a">MELAKOTTAI, EAST COAST RD JUNCTION, RAMANATHAPURAM</span><span class="s">★</span>
+  </div>
+</div>
+
+<!-- APPROACH -->
+<section class="apr" id="approach">
+  <div class="wrap">
+    <div class="sh">
+      <div class="k">OUR APPROACH</div>
+      <h2>A Higher Standard of Care for Every Vehicle.</h2>
+      <p>At VENUS SPRING WORKS, we know that choosing a workshop is about more than getting the job done. It's about finding people who take your vehicle seriously, value your time, and care about the quality of their work.</p>
+      <p class="b">That's the standard we aim to deliver with every service.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><span class="n">01</span><h3>Quality in Every Detail</h3><p>We believe good work starts with attention to detail. Every service deserves a careful approach and a commitment to doing things right.</p><div class="f">INSPECTION<img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/88415.svg" width="12" height="12" alt=""></div></article>
+      <article class="card"><span class="n">02</span><h3>A Customer-First Approach</h3><p>Your needs come first. We aim to make every interaction straightforward, transparent, and focused on finding the right solution for your vehicle.</p><div class="f">TRANSPARENCY<img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/8d9c4.svg" width="14.667" height="10" alt=""></div></article>
+      <article class="card"><span class="n">03</span><h3>Focused on Leaf Spring Services</h3><p>From understanding your vehicle's leaf spring-related needs to discussing the appropriate service, our focus is on careful attention and quality workmanship.</p><div class="f">METALLURGY<img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/0342f.svg" width="12.021" height="12.337" alt=""></div></article>
+      <article class="card"><span class="n">04</span><h3>Committed to Your Satisfaction</h3><p>Our goal is to give you a service experience that leaves you feeling informed, confident, and well looked after.</p><div class="f">ASSURANCE<img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/08229.svg" width="14" height="13.333" alt=""></div></article>
+    </div>
+    <div class="commit">
+      <div>
+        <div class="k"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/ccccf.svg" width="16.425" height="13.5" alt="">WORKSHOP PRINCIPLE</div>
+        <h3>Our Commitment Is Simple.</h3>
+        <p>At VENUS SPRING WORKS, quality isn't just something we talk about. It's the standard we strive to maintain in our work and the relationships we build with our customers.</p>
+        <p class="s">Because your trust is just as important as your vehicle.</p>
+      </div>
+      <a class="btn btn-wh" href="#contact">Talk to Our Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section class="fbs" id="feedback">
+  <div class="wrap">
+    <div class="sh">
+      <div class="k">CUSTOMER FEEDBACK</div>
+      <h2>Good Service Starts with Listening.</h2>
+      <p>Choosing the right workshop matters. You want your vehicle in capable hands, clear communication throughout the process, and work completed to a high standard.</p>
+      <p>At VENUS SPRING WORKS, customer feedback helps us understand what we're doing well and where we can improve. Every genuine review gives us an opportunity to deliver a better experience.</p>
+    </div>
+    <div class="two">
+      <div class="ctx">
+        <h3>Your Experience Matters to Us.</h3>
+        <p>Have you recently visited our workshop? We'd like to hear about your experience.</p>
+        <p>Tell us what went well, what we could improve, and how we can make your next visit even better.</p>
+        <p>Your feedback helps us continue working towards better service and higher standards.</p>
+        <a class="btn btn-sm ctx-b" href="#name">Share Your Feedback <img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/f9034.svg" width="15" height="15" alt=""></a>
+        <div class="note"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/44a4a.svg" width="13.333" height="16.667" alt=""><span>We uphold genuine workshop transparency. We do not manufacture fictitious reviews, ratings, or simulated testimonials.</span></div>
+      </div>
+
+      <div class="fc">
+        <h3>Tell Us About Your Experience</h3>
+        <p class="d">Complete the fields below to send direct feedback to our quality desk.</p>
+        <form id="fbForm" novalidate>
+          <div class="fld"><label for="name">FULL NAME <i>*</i></label><input id="name" name="name" type="text" placeholder="e.g. Anand Sharma" autocomplete="name" required></div>
+          <div class="fld"><label for="phone">PHONE NUMBER <i>*</i></label><input id="phone" name="phone" type="tel" inputmode="tel" placeholder="e.g. 10-digit mobile" autocomplete="tel" required></div>
+          <div class="fld"><label for="vehicle">VEHICLE TYPE (OPTIONAL)</label><input id="vehicle" name="vehicle" type="text" placeholder="e.g. Commercial 4-Wheeler, Heavy LCV, Flatbed"></div>
+          <div class="fld"><label for="experience">HOW WAS YOUR EXPERIENCE? <i>*</i></label>
+            <select id="experience" name="experience" required>
+              <option value="">Select an option</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Needs Improvement</option>
+            </select>
+          </div>
+          <div class="fld"><label for="feedback-text">YOUR FEEDBACK <i>*</i></label><textarea id="feedback-text" name="feedback" placeholder="Please share any remarks regarding your service, leaf spring alignment, or workshop experience..." required></textarea></div>
+          <button class="sub-btn" id="submitBtn" type="submit"><span id="btnTxt">Submit Feedback</span><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/80ad2.svg" width="14.25" height="12" alt=""></button>
+          <div id="msg" role="status" aria-live="polite"></div>
+          <p class="fnote">Your feedback helps us improve our service and customer experience.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="loc" id="contact">
+  <div class="wrap">
+    <div class="lh">
+      <div class="sh">
+        <div class="k">WORKSHOP LOCATION &amp; ACCESS</div>
+        <h2>Visit Our Heavy Axle &amp; Spring Facility.</h2>
+        <p>Strategically located at East Coast Rd Junction, Melakottai, Ramanathapuram with full commercial vehicle bay clearance, hydraulic pits, and heavy spring fitment bays.</p>
+      </div>
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&amp;query=VENUS+SPRING+WORKS+Melakottai+East+Coast+Rd+Ramanathapuram+Tamil+Nadu+623504" target="_blank" rel="noopener"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/7e2e1.svg" width="15" height="15" alt="">Open in Google Maps <img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/712f9.svg" width="10" height="10" alt=""></a>
+    </div>
+    <div class="lc">
+      <span class="badge"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/8beae.svg" width="9.333" height="13.333" alt="">Official Workshop Address</span>
+      <h3>VENUS SPRING WORKS</h3>
+      <div class="addr">5/436, Melakottai, East Coast Rd, Junction, Ramanathapuram, Tamil Nadu 623504</div>
+      <p class="ez">Easy arterial approach for 4-wheelers, light commercial vehicles, and heavy multi-axle freight trucks.</p>
+      <div class="oh">
+        <div class="t"><span><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/d3565.svg" width="16.667" height="18.667" alt="">Operating Hours</span><small>Commercial Bays</small></div>
+        <div class="row"><span>Mon – Thu:</span><span>8:30 AM – 8:30 PM</span></div>
+        <div class="row"><span>Friday:</span><span>8:30 AM – 12:00 PM<br>2:30 PM – 8:30 PM</span></div>
+        <div class="row"><span>Saturday:</span><span>8:30 AM – 8:30 PM</span></div>
+        <div class="row"><span>Sunday:</span><span class="closed">Closed</span></div>
+      </div>
+      <div class="ent"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/8b80a.svg" width="15" height="13.333" alt=""><div><b>Wide Truck &amp; Commercial Bay Entrance</b>Direct drive-in access off East Coast Road Junction</div></div>
+      <div class="dp"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/7fc3a.svg" width="15" height="15" alt=""><span class="k">DIRECT WORKSHOP PHONE</span><a href="tel:+919524293401">+91 95242 93401</a><span>(or)</span><a href="tel:+919942724225">+91 99427 24225</a></div>
+      <div class="lb">
+        <a class="btn btn-g" href="https://www.google.com/maps/dir/?api=1&amp;destination=VENUS+SPRING+WORKS+Melakottai+East+Coast+Rd+Ramanathapuram+Tamil+Nadu+623504" target="_blank" rel="noopener"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/64181.svg" width="15" height="15" alt="">Get Driving Directions</a>
+        <a class="btn btn-w" href="tel:+919524293401"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/b50bb.svg" width="13.5" height="13.5" alt="">Call Workshop</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <div class="k">DIRECT WORKSHOP ENGAGEMENT</div>
+    <h2>Looking for Quality-Focused Leaf Spring Service?</h2>
+    <p>Give your four-wheeler the attention it deserves. Get in touch with VENUS SPRING WORKS to discuss your vehicle's needs and learn how we can help.</p>
+    <div class="acts">
+      <a class="btn btn-g" href="#feedback">Enquire About Your Vehicle</a>
+      <a class="btn btn-o" href="tel:+919524293401"><img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/d22b8.svg" width="15" height="15" alt="">Call: 9524293401 / 9942724225</a>
+    </div>
+    <div class="fine">VENUS SPRING WORKS — Quality Workmanship. Focused on You.</div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div class="brand" style="padding:0">
+          <span class="logo"><img src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/19735.png" alt=""></span>
+          <span><span class="bn"><b>Venus</b><span>Spring<br>Works</span></span><span class="tag">Heavy Suspension &amp; Leaf Springs</span></span>
+        </div>
+        <p class="d">Premier heavy four-wheeler suspension and parabolic leaf spring engineering. Restoring factory camber, metallurgical integrity, and road safety.</p>
+      </div>
+      <div>
+        <h4>NAVIGATION</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#standards">Our Standards</a></li>
+          <li><a href="#feedback">Customer Feedback</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>WORKSHOP DESK</h4>
+        <p style="font-size:12px;margin-bottom:8px">5/436, Melakottai, East Coast Rd, Junction, Ramanathapuram, Tamil Nadu 623504</p>
+        <div class="r"><span>Mon – Thu:</span><span>8:30 AM – 8:30 PM</span></div>
+        <div class="r"><span>Fri:</span><span>8:30–12:00, 14:30–20:30</span></div>
+        <div class="r"><span>Sat:</span><span>8:30 AM – 8:30 PM</span></div>
+        <div class="r"><span>Sun:</span><span class="closed">Closed</span></div>
+        <div class="em"><i></i>Emergency Assist Available</div>
+        <div class="ph">Phone: <a href="tel:+919524293401">+91 95242 93401</a> (or) <a href="tel:+919942724225">+91 99427 24225</a></div>
+        <a class="mp" href="https://www.google.com/maps/search/?api=1&amp;query=VENUS+SPRING+WORKS+Melakottai+East+Coast+Rd+Ramanathapuram+Tamil+Nadu+623504" target="_blank" rel="noopener">Open in Google Maps <img class="fi" src="https://www.figma.com/api/mcp/asset/842634eb-a2d1-4e0c-8518-587326d1dd60/8179b.svg" width="12" height="12" alt=""></a>
+      </div>
+    </div>
+    <div class="fb"><span>© 2026 VENUS SPRING WORKS. All rights reserved.</span><span>Engineering Precision Suspension</span></div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- Leaf spring load simulation ---------- */
+  var viz = document.getElementById("viz");
+  var cycle = document.getElementById("cycle");
+  var loaded = false;
+  function toggleLoad() {
+    loaded = !loaded;
+    viz.classList.toggle("load", loaded);
+    cycle.classList.toggle("on", loaded);
+    cycle.setAttribute("aria-pressed", String(loaded));
+    document.getElementById("state").innerHTML = loaded ? "Loaded Camber<br>(Deflected)" : "Unloaded Camber<br>(Neutral)";
+    document.getElementById("m1").textContent = loaded ? "+64 mm" : "+142 mm";
+    document.getElementById("m2").textContent = loaded ? "78.0 mm" : "0.0 mm";
+    document.getElementById("m3").textContent = loaded ? "Working" : "Nominal";
+  }
+  cycle.addEventListener("click", function (e) { e.stopPropagation(); toggleLoad(); });
+  viz.addEventListener("click", toggleLoad);
+
+  /* ---------- Google Sheets form (GET + no-cors, works on file://) ---------- */
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwovB622rjXhBaGCdEhYhqWnEKbxajYKId-5jiwmI11IVsGefrwDUMiJd3FnXiwh939/exec";
+
+  var form = document.getElementById("fbForm");
+  var btn = document.getElementById("submitBtn");
+  var btnTxt = document.getElementById("btnTxt");
+  var msg = document.getElementById("msg");
+
+  function resetBtn() {
+    btn.disabled = false;
+    btn.className = "sub-btn";
+    btnTxt.textContent = "Submit Feedback";
+  }
+
+  function showSuccess() {
+    btn.disabled = false;
+    btn.className = "sub-btn ok";
+    btnTxt.textContent = "Feedback Sent ✓";
+    msg.className = "ok";
+    msg.textContent = "Thank you! Your feedback has been sent to our quality desk.";
+    form.reset();
+    setTimeout(resetBtn, 4000);
+  }
+
+  function showError() {
+    btn.disabled = false;
+    btn.className = "sub-btn err";
+    btnTxt.textContent = "Failed – Try Again";
+    msg.className = "err";
+    msg.textContent = "Sorry, we couldn't send your feedback. Please try again or call us directly.";
+    setTimeout(resetBtn, 4000);
+  }
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    msg.className = "";
+    msg.textContent = "";
+
+    var name = form.elements["name"].value.trim();
+    var phone = form.elements["phone"].value.trim();
+    var vehicle = form.elements["vehicle"].value.trim();
+    var experience = form.elements["experience"].value;
+    var feedback = form.elements["feedback"].value.trim();
+
+    if (!name || !phone || !experience || !feedback) {
+      msg.className = "err";
+      msg.textContent = "Please fill in your name, phone number, experience and feedback.";
+      return;
+    }
+
+    btn.disabled = true;
+    btnTxt.textContent = "Sending…";
+
+    var url = SCRIPT_URL + "?" + new URLSearchParams({
+      name: name,
+      phone: phone,
+      vehicle: vehicle,
+      experience: experience,
+      feedback: feedback
+    });
+
+    fetch(url, { method: "GET", mode: "no-cors" })
+      .then(function () { showSuccess(); })
+      .catch(function () { showError(); });
+  });
+})();
+</script>
+</body>
+</html>
